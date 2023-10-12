@@ -1,5 +1,5 @@
 venv
 .idea
-__pycache__\
 .env
 dp.sqlite3
+__pycache__/
