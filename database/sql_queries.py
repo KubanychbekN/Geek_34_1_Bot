@@ -13,3 +13,6 @@ CREATE_USER_TABLE_QUERY = """
 INSERT_USER_QUERY = """
 INSERT OR IGNORE INTO telegram_users VALUES (?,?,?,?,?)
 """
+# SELECT_ALL_USER_QUERRY = """
+# SELECT * FROM telegram_users
+# """

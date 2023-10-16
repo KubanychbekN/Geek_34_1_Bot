@@ -20,3 +20,15 @@ class Database:
             (None, telegram_id, username, first_name, last_name,)
         )
         self.connection.commit()
+
+    # def sql_select_user_query(self):
+    #     self.cursor.row_factory = lambda cursur, row:{
+    #         'id': row[0],
+    #         'telegram_id': row[1],
+    #         'username': row[2],
+    #         'first_name': row[3],
+    #         'last_name': row[4]
+    #     }
+    #     return self.cursor.execute(
+    #         sql_queries.SELECT_ALL_USER_QUERRY,
+    #     ).fetchall()

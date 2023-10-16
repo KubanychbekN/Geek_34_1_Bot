@@ -6,32 +6,37 @@ from keyboards.inline_buttons import questionnaire_one_keyboard, questionnaire_t
 async def start_questionnaire(call: types.CallbackQuery):
     await bot.send_message(
         chat_id=call.message.chat.id,
+        #message_id=call.message.message_id,
         text="Ты девушка или парень?",
         reply_markup=await questionnaire_one_keyboard()
     )
 
 async def male_answer(call: types.CallbackQuery):
-    await bot.send_message(
+    await bot.edit_message_text(
         chat_id=call.message.chat.id,
+        message_id=call.message.message_id,
         text="Сколько тебе лет?",
         reply_markup= await questionnaire_two_keyboard()
     )
 async def female_answer(call: types.CallbackQuery):
-    await bot.send_message(
+    await bot.edit_message_text(
         chat_id=call.message.chat.id,
+        message_id=call.message.message_id,
         text="Сколько тебе лет?",
         reply_markup= await questionnaire_two_keyboard()
     )
 
 async def no_answer(call: types.CallbackQuery):
-    await bot.send_message(
+    await bot.edit_message_text(
         chat_id=call.message.chat.id,
+        message_id=call.message.message_id,
         text="Опрос завершен"
     )
 
 async def yes_answer(call: types.CallbackQuery):
-    await bot.send_message(
+    await bot.edit_message_text(
         chat_id=call.message.chat.id,
+        message_id=call.message.message_id,
         text="Опрос завершен"
     )
 
