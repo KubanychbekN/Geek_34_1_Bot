@@ -38,3 +38,12 @@ async def questionnaire_two_keyboard():
     markup.add(finished_two_button)
     return markup
 
+async def admin_keyboard():
+    markup = InlineKeyboardMarkup()
+    admin_user_list_button = InlineKeyboardButton(
+        "Список пользователей",
+        callback_data="admin_user_list"
+    )
+    markup.add(admin_user_list_button)
+    return markup
+

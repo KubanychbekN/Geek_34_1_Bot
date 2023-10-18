@@ -6,7 +6,6 @@ from handlers import (
     chat_actions,
 )
 from database.sql_commands import Database
-
 async def onstart_up(_):
     db = Database()
     db.sql_create_tables()
