@@ -29,7 +29,7 @@ async def start_button(message: types.Message):
         await bot.send_photo(
             chat_id=message.chat.id,
             photo=photo,
-            caption=f"Привет {message.from_user.first_name} я твой первый Бот!\nДавай пройдем небольшой опрос.",
+            caption=f"Привет {message.from_user.first_name} я Бот 34-1!\nДавай пройдем небольшой опрос.",
             reply_markup=await start_keyboard()
         )
 
